@@ -1,0 +1,51 @@
+body {
+  background-color: aliceblue;
+}
+.aa {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "Source Code Pro", monospace;
+}
+.aa:hover {
+  background-color: rgb(222, 221, 221);
+  transition: 0.6s;
+  border: 1px solid rgb(222, 221, 221);
+}
+.aa1:hover {
+  background-color: rgb(222, 221, 221);
+  transition: 0.6s;
+  border: 1px solid rgb(222, 221, 221);
+}
+.aa1 {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "Source Code Pro", monospace;
+}
+.d {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+p {
+  font-family: "Source Code Pro", monospace;
+}
+h2 {
+  font-family: "Source Code Pro", monospace;
+}
+h1 {
+  font-family: "Source Code Pro", monospace;
+}
+li {
+  font-family: "Source Code Pro", monospace;
+}
+.hh {
+  margin-left: 50px;
+}
