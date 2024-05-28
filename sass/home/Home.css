@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+}
+
+.ahref {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  margin-top: 150px;
+}
+main .home-first {
+  justify-content: center;
+  display: flex;
+}
+main .home-first .logoImg {
+  width: 230px;
+  height: 170px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+main .home-first .a {
+  width: 3px;
+  height: 200px;
+  background-color: #000;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+main .home-first .home-fir-mini h1 {
+  font-family: sans-serif;
+  color: white;
+}
+main .home-first .home-fir-mini p {
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 630px;
+  color: white;
+}
+main .home-second {
+  margin-top: 150px;
+  text-align: center;
+}
+main .home-second h1 {
+  color: white;
+}
+main .home-second .home-sec-skil {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+}
+main .home-second .home-sec-skil h1 {
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+/* Home.css */
+/* Animation for SVG icons */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.home-sec-skil svg {
+  animation: float 2s ease-in-out infinite;
+}/*# sourceMappingURL=Home.css.map */
