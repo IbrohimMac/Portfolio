@@ -23,10 +23,13 @@ main .home-first .logoImg {
 main .home-first .a {
   width: 3px;
   height: 200px;
-  background-color: #000;
+  background-color: #222121;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 5px;
+}
+main .home-first .home-fir-mini {
+  margin-top: 10px;
 }
 main .home-first .home-fir-mini h1 {
   font-family: sans-serif;
@@ -49,23 +52,22 @@ main .home-second .home-sec-skil {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 110px;
+  gap: 100px;
 }
 main .home-second .home-sec-skil h1 {
   font-family: sans-serif;
   font-size: 30px;
 }
 
-/* Home.css */
 /* Animation for SVG icons */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
 }
 .home-sec-skil svg {
-  animation: float 2s ease-in-out infinite;
+  animation: float 1.3s ease-in-out infinite;
 }/*# sourceMappingURL=Home.css.map */

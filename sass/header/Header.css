@@ -16,6 +16,7 @@ body {
 .head .logoImg {
   width: 70px;
   height: 50px;
+  border-radius: 5px;
 }
 .head .navbar-brand {
   margin-left: 20px;
