@@ -19,9 +19,29 @@ const Header = () => {
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <Link className="head-link" to="/About">
+                  <a className="head-link" href="#skil">
                     <p>About</p>
-                  </Link>
+                  </a>
+                </ul>
+              </div>
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                  <a className="head-link" href="#proj">
+                    <p>Projects</p>
+                  </a>
+                </ul>
+              </div>
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                  <a className="head-link" href="#contact">
+                    <p>Contact</p>
+                  </a>
                 </ul>
               </div>
             </div>

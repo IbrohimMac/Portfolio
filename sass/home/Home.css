@@ -2,6 +2,10 @@ body {
   font-family: sans-serif;
 }
 
+.link {
+  text-decoration: none !important;
+}
+
 .ahref {
   text-decoration: none;
   color: white;
@@ -9,6 +13,7 @@ body {
 
 main {
   margin-top: 150px;
+  /* Animation for SVG icons */
 }
 main .home-first {
   justify-content: center;
@@ -58,8 +63,39 @@ main .home-second .home-sec-skil h1 {
   font-family: sans-serif;
   font-size: 30px;
 }
-
-/* Animation for SVG icons */
+main .home-third .home-third-min {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+main .home-third .home-third-min .home-third-min1 {
+  background-color: #ccc;
+  height: 500px;
+  border-radius: 3px;
+}
+main .home-third .home-third-min .home-third-min1 h3 {
+  color: black;
+  margin-top: 30px;
+}
+main .home-third .home-third-min img {
+  border-radius: 2px;
+  width: 610px;
+  height: 350px;
+}
+main .home-fourth {
+  margin-top: 150px;
+  text-align: center;
+}
+main .home-fourth h1 {
+  color: white;
+}
+main .home-fourth .home-fourth-mini {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 20px;
+}
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -68,6 +104,14 @@ main .home-second .home-sec-skil h1 {
     transform: translateY(-20px);
   }
 }
-.home-sec-skil svg {
+main .home-sec-skil svg {
   animation: float 1.3s ease-in-out infinite;
+}
+main .home-third {
+  margin-top: 150px;
+  text-align: center;
+}
+main .home-third h1 {
+  color: white;
+  font-family: sans-serif;
 }/*# sourceMappingURL=Home.css.map */
