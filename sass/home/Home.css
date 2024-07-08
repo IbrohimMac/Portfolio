@@ -18,6 +18,7 @@ main {
 main .home-first {
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
 }
 main .home-first .logoImg {
   width: 230px;
@@ -43,7 +44,7 @@ main .home-first .home-fir-mini h1 {
 main .home-first .home-fir-mini p {
   font-family: sans-serif;
   font-size: 18px;
-  width: 630px;
+  max-width: 630px;
   color: white;
 }
 main .home-second {
@@ -58,6 +59,7 @@ main .home-second .home-sec-skil {
   display: flex;
   justify-content: center;
   gap: 100px;
+  flex-wrap: wrap;
 }
 main .home-second .home-sec-skil h1 {
   font-family: sans-serif;
@@ -71,7 +73,7 @@ main .home-third .home-third-min {
 }
 main .home-third .home-third-min .home-third-min1 {
   background-color: #ccc;
-  height: 500px;
+  max-height: 500px;
   border-radius: 3px;
 }
 main .home-third .home-third-min .home-third-min1 h3 {
@@ -80,12 +82,13 @@ main .home-third .home-third-min .home-third-min1 h3 {
 }
 main .home-third .home-third-min img {
   border-radius: 2px;
-  width: 610px;
-  height: 350px;
+  max-width: 610px;
+  max-height: 350px;
 }
 main .home-fourth {
   margin-top: 150px;
   text-align: center;
+  padding-bottom: 70px;
 }
 main .home-fourth h1 {
   color: white;
@@ -94,6 +97,7 @@ main .home-fourth .home-fourth-mini {
   display: flex;
   gap: 40px;
   justify-content: center;
+  flex-wrap: wrap;
   padding-top: 20px;
 }
 @keyframes float {
@@ -114,4 +118,40 @@ main .home-third {
 main .home-third h1 {
   color: white;
   font-family: sans-serif;
+}
+
+@media only screen and (max-width: 1293px) {
+  .home-third-min {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 657px) {
+  .home-fir-mini {
+    justify-content: center;
+  }
+  .home-fir-mini h1 {
+    text-align: center;
+  }
+  .home-fir-mini p {
+    width: 500px;
+  }
+  .home-third img {
+    width: 450px;
+    height: 240px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-fir-mini {
+    justify-content: center;
+  }
+  .home-fir-mini h1 {
+    text-align: center;
+  }
+  .home-fir-mini p {
+    width: 300px;
+  }
+  .home-third img {
+    width: 350px;
+    height: 140px;
+  }
 }/*# sourceMappingURL=Home.css.map */
