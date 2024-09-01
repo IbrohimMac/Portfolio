@@ -43,13 +43,13 @@ main {
     }
   }
   .home-second {
-    margin-top: 150px;
+    margin-top: 250px;
     text-align: center;
     h1 {
       color: white;
     }
     .home-sec-skil {
-      margin-top: 50px;
+      margin-top: 100px;
       display: flex;
       justify-content: center;
       gap: 100px;
@@ -61,24 +61,51 @@ main {
     }
   }
   .home-third {
+    padding-top: 100px;
     .home-third-min {
       margin-top: 50px;
       display: flex;
       flex-wrap: wrap;
-      gap: 50px;
+      justify-content: center;
+      gap: 100px;
       .home-third-min1 {
-        background-color: #ccc;
+        background-color: #c9c9c9;
         max-height: 500px;
         border-radius: 3px;
-        h3 {
-          color: black;
-          margin-top: 30px;
+        .gitt {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+        .git {
+          width: 150px;
+          padding-top: 10px;
+          display: flex;
+          gap: 10px;
+          background-color: #241f1f;
+          border-radius: 5px;
+          justify-content: center;
+          p {
+            color: white;
+          }
+          .iGit {
+            margin-top: 4px;
+            color: white;
+          }
+        }
+        .git:hover {
+          transition: 0.4s;
+          transform: scale(1.05);
         }
       }
       img {
         border-radius: 2px;
-        max-width: 610px;
-        max-height: 350px;
+        max-width: 500px;
+        max-height: 250px;
+        margin-bottom: 20px;
       }
       .home-third-min1 {
       }

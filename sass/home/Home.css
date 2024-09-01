@@ -48,14 +48,14 @@ main .home-first .home-fir-mini p {
   color: white;
 }
 main .home-second {
-  margin-top: 150px;
+  margin-top: 250px;
   text-align: center;
 }
 main .home-second h1 {
   color: white;
 }
 main .home-second .home-sec-skil {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   gap: 100px;
@@ -65,25 +65,54 @@ main .home-second .home-sec-skil h1 {
   font-family: sans-serif;
   font-size: 30px;
 }
+main .home-third {
+  padding-top: 100px;
+}
 main .home-third .home-third-min {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  justify-content: center;
+  gap: 100px;
 }
 main .home-third .home-third-min .home-third-min1 {
-  background-color: #ccc;
+  background-color: #c9c9c9;
   max-height: 500px;
   border-radius: 3px;
 }
-main .home-third .home-third-min .home-third-min1 h3 {
-  color: black;
-  margin-top: 30px;
+main .home-third .home-third-min .home-third-min1 .gitt {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main .home-third .home-third-min .home-third-min1 .git {
+  width: 150px;
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
+  background-color: #241f1f;
+  border-radius: 5px;
+  justify-content: center;
+}
+main .home-third .home-third-min .home-third-min1 .git p {
+  color: white;
+}
+main .home-third .home-third-min .home-third-min1 .git .iGit {
+  margin-top: 4px;
+  color: white;
+}
+main .home-third .home-third-min .home-third-min1 .git:hover {
+  transition: 0.4s;
+  transform: scale(1.05);
 }
 main .home-third .home-third-min img {
   border-radius: 2px;
-  max-width: 610px;
-  max-height: 350px;
+  max-width: 500px;
+  max-height: 250px;
+  margin-bottom: 20px;
 }
 main .home-fourth {
   margin-top: 150px;

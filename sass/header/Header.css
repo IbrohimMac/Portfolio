@@ -1,5 +1,34 @@
+/* Header.css */
+/* Light mode (default) */
+.light-mode {
+  color: black;
+}
+
+.light-mode .head {
+  background-color: rgb(101, 161, 183);
+}
+
+.light-mode .head-link p {
+  color: black;
+}
+
+/* Dark mode */
+.dark-mode {
+  color: white;
+}
+
+.dark-mode .head {
+  background-color: black;
+  border-radius: 4px;
+}
+
+.dark-mode .head-link p {
+  color: white;
+}
+
+/* Common styles */
 body {
-  background-color: rgb(12, 96, 126);
+  background-color: rgb(101, 161, 183);
 }
 
 .container {
@@ -7,29 +36,32 @@ body {
 }
 
 .head {
-  background-color: rgb(12, 96, 126);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2.95px 0px;
   padding-left: 10px;
   display: flex;
   justify-content: space-between;
 }
-.head .logoImg {
+
+.logoImg {
   width: 70px;
   height: 50px;
   border-radius: 5px;
 }
-.head .navbar-brand {
+
+.navbar-brand {
   margin-left: 20px;
 }
-.head .head-link {
+
+.head-link {
   text-decoration: none;
-  color: white;
 }
-.head .head-txt {
+
+.head-txt {
   display: flex;
   gap: 20px;
 }
-.head .head-txt p {
+
+.head-txt p {
   margin-top: 15px;
   font-family: sans-serif;
   font-size: 18px;

@@ -1,11 +1,15 @@
 import React from "react";
 import "../../../sass/home/Home.css";
+// import "../../../sass/header/header.css";
 import i1 from "../../../public/Logo2.jpeg";
 import i2 from "../../../public/Project-img.png";
 import i3 from "../../../public/Project-img2.png";
 import i4 from "../../../public/Project-img3.png";
 import i5 from "../../../public/Project-img4.png";
+import { FaGithub } from "react-icons/fa";
+import { MdExitToApp } from "react-icons/md";
 import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <main className="container">
@@ -16,7 +20,7 @@ const Home = () => {
           <h1>About me!</h1>
           <br />
           <p>
-            My name is Ibrohim, I'm 16 years old and I studied frontend course
+            My name is Ibrohim, I'm 17 years old and I studied frontend course
             for a year. <hr /> Somethings I'm interested in are reading books,
             coding and building websites.
           </p>
@@ -193,28 +197,88 @@ const Home = () => {
         <h1>My Projects</h1>
         <div className="home-third-min">
           <div className="home-third-min1">
-            <Link className="link" to="https://cryptto-website.netlify.app/">
-              <img src={i2} alt="" />
-              <h3>Crypto Clone</h3>
-            </Link>
+            <img src={i2} alt="" />
+            <h4>Crypto Clone</h4>
+
+            <div className="gitt">
+              <Link className="link" to="https://github.com/IbrohimMac/Crypto">
+                <div className="git">
+                  <FaGithub className="iGit" />
+                  <p>View Code</p>
+                </div>
+              </Link>
+              <Link className="link" to="https://cryptto-website.netlify.app/">
+                <div className="git">
+                  <MdExitToApp className="iGit" />
+                  <p>Live Preview</p>
+                </div>
+              </Link>
+            </div>
           </div>
           <div className="home-third-min1">
-            <Link className="link" to="https://mc-donalds-ibrohim.netlify.app/">
-              <img src={i3} alt="" />
-              <h3>McDonald's Clone</h3>
-            </Link>
+            <img src={i3} alt="" />
+            <h4>McDonald's Clone</h4>
+
+            <div className="gitt">
+              <Link
+                className="link"
+                to="https://github.com/IbrohimMac/McDonalds"
+              >
+                <div className="git">
+                  <FaGithub className="iGit" />
+                  <p>View Code</p>
+                </div>
+              </Link>
+              <Link
+                className="link"
+                to="https://mc-donalds-ibrohim.netlify.app/"
+              >
+                <div className="git">
+                  <MdExitToApp className="iGit" />
+                  <p>Live Preview</p>
+                </div>
+              </Link>
+            </div>
           </div>
           <div className="home-third-min1">
-            <Link className="link" to="https://spotify-webs1te.netlify.app/">
-              <img src={i4} alt="" />
-              <h3>Spotify Clone</h3>
-            </Link>
+            <img src={i4} alt="" />
+            <h4>Spotify Clone</h4>
+
+            <div className="gitt">
+              <Link className="link" to="https://github.com/IbrohimMac/Spotify">
+                <div className="git">
+                  <FaGithub className="iGit" />
+                  <p>View Code</p>
+                </div>
+              </Link>
+              <Link className="link" to="https://spotify-webs1te.netlify.app/">
+                <div className="git">
+                  <MdExitToApp className="iGit" />
+                  <p>Live Preview</p>
+                </div>
+              </Link>
+            </div>
           </div>
           <div className="home-third-min1">
-            <Link className="link" to="https://exam-5-si.netlify.app/">
-              <img src={i5} alt="" />
-              <h3>Countries</h3>
-            </Link>
+            <img src={i5} alt="" />
+            <h4>Countries</h4>
+            <div className="gitt">
+              <Link
+                className="link"
+                to="https://github.com/IbrohimMac/Countries"
+              >
+                <div className="git">
+                  <FaGithub className="iGit" />
+                  <p>View Code</p>
+                </div>
+              </Link>
+              <Link className="link" to="https://countries-i.netlify.app/">
+                <div className="git">
+                  <MdExitToApp className="iGit" />
+                  <p>Live Preview</p>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -321,5 +385,4 @@ const Home = () => {
     </main>
   );
 };
-
 export default Home;
