@@ -1,34 +1,14 @@
-/* Header.css */
-/* Light mode (default) */
-.light-mode {
-  color: black;
-}
-
-.light-mode .head {
-  background-color: rgb(101, 161, 183);
-}
-
-.light-mode .head-link p {
-  color: black;
-}
-
-/* Dark mode */
-.dark-mode {
-  color: white;
-}
-
-.dark-mode .head {
-  background-color: black;
-  border-radius: 4px;
-}
-
-.dark-mode .head-link p {
-  color: white;
-}
-
-/* Common styles */
 body {
-  background-color: rgb(101, 161, 183);
+  background: linear-gradient(45deg, rgba(255, 99, 71, 0.8), rgba(135, 206, 235, 0.7), rgba(60, 179, 113, 0.7), rgba(238, 130, 238, 0.7));
+  background-size: 200% 200%; /* Allow gradient to animate over a larger area */
+  animation: gradientAnimation 10s ease infinite; /* Animation effect */
+  padding: 20px; /* Add padding for content spacing */
+  color: white; /* Text color for better visibility */
+  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -54,6 +34,12 @@ body {
 
 .head-link {
   text-decoration: none;
+  color: white;
+}
+
+.head-link:hover {
+  transform: scaleX(1.01);
+  transition: 0.4s;
 }
 
 .head-txt {
@@ -65,4 +51,16 @@ body {
   margin-top: 15px;
   font-family: sans-serif;
   font-size: 18px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }/*# sourceMappingURL=Header.css.map */

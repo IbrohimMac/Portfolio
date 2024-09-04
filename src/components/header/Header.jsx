@@ -66,14 +66,8 @@ import I1 from "../../../public/Logo.jpeg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <div className={`container ${darkMode ? "dark-mode" : "light-mode"}`}>
+    <div className="container">
       <header className="head">
         <nav className="navbar navbar-expand-lg d-flex">
           <div className="container-fluid gap-5">
@@ -113,9 +107,6 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            <button className="btn btn-secondary" onClick={toggleDarkMode}>
-              {darkMode ? "Light Mode" : "Dark Mode"}
-            </button>
           </div>
         </nav>
       </header>

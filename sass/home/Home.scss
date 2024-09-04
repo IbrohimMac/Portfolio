@@ -8,6 +8,7 @@ body {
   text-decoration: none;
   color: white;
 }
+
 main {
   margin-top: 150px;
   .home-first {
@@ -71,7 +72,7 @@ main {
       .home-third-min1 {
         background-color: #c9c9c9;
         max-height: 500px;
-        border-radius: 3px;
+        border-radius: 8px;
         .gitt {
           padding-top: 40px;
           padding-bottom: 40px;
@@ -86,7 +87,7 @@ main {
           display: flex;
           gap: 10px;
           background-color: #241f1f;
-          border-radius: 5px;
+          border-radius: 8px;
           justify-content: center;
           p {
             color: white;
@@ -102,7 +103,7 @@ main {
         }
       }
       img {
-        border-radius: 2px;
+        border-radius: 6px;
         max-width: 500px;
         max-height: 250px;
         margin-bottom: 20px;
@@ -113,19 +114,92 @@ main {
   }
   .home-fourth {
     margin-top: 150px;
-    text-align: center;
     padding-bottom: 70px;
     h1 {
       color: white;
+      text-align: center;
     }
     .home-fourth-mini {
       display: flex;
       gap: 40px;
       justify-content: center;
       flex-wrap: wrap;
-      padding-top: 20px;
+      padding-top: 30px;
+      margin-bottom: 50px;
     }
   }
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: black; /* Solid black background color */
+    color: white; /* White text color for dark mode */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition for mode switch */
+  }
+
+  /* Gradient Animation for Light Mode */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Button to toggle dark mode */
+  .toggle-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .toggle-dark-mode:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: rgba(
+      70,
+      130,
+      180,
+      0.8
+    ); /* Steel blue color with transparency */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease,
+      opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure the button is on top */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Start with a downward slide */
+  }
+
+  .back-to-top.show {
+    opacity: 1; /* Show the button */
+    transform: translateY(0); /* Slide up into view */
+  }
+
+  .back-to-top:hover {
+    background-color: rgba(70, 130, 180, 1); /* Darker blue on hover */
+  }
+
   /* Animation for SVG icons */
   @keyframes float {
     0%,
