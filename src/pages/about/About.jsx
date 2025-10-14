@@ -10,9 +10,9 @@ const About = () => {
           <h1>About me!</h1>
           <br />
           <p>
-            My name is Ibrohim, I'm 17 years old and I studied frontend course
-            for a year. <hr /> Somethings I'm interested in are reading books,
-            coding and building websites.
+            My name is Ibrohim, I'm 18 years old and I studied frontend course
+            for a year. <hr /> Somethings I'm interested in creating websites,
+            solve problems with codes.
           </p>
         </div>
       </div>
